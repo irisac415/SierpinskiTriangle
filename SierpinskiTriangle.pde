@@ -2,23 +2,30 @@ public void setup()
 {
   size(650,650);
   background(0,50,100);
+  sierpinski(50,600,550);
 }
 public void draw()
 {
-  sierpinski(50,600,550);
-}
-public void mouseDragged()//optional
-{
   
+}
+public void mousePressed()//optional
+{
+  background(0);
+  sierpinski(175,475,300);
+}
+void keyPressed()
+{
+  background(0,50,100);
+  sierpinski(50,600,550);
 }
 public void sierpinski(int x, int y, int len) 
 {
-  if(len<50){
-    fill(150,150,230);
-    stroke(150,150,230);
+  if(len<=50){
+    fill(150,170,250);
+    stroke(150,170,250);
     strokeWeight(1);
     triangle(x,y,x+len/2,y-len/3,x+len,y);
-    stroke(120,120,210);
+    stroke(150,190,255);
     strokeWeight(3);
     noFill();
     triangle(x,y,x+len/2,y-len,x+len,y);
