@@ -21,8 +21,8 @@ void keyPressed()
 public void sierpinski(int x, int y, int len) 
 {
   if(len<=50){
-    fill(150,170,250);
-    stroke(150,170,250);
+    fill(150,190,255);
+    stroke(150,190,255);
     strokeWeight(1);
     triangle(x,y,x+len/2,y-len/3,x+len,y);
     stroke(150,190,255);
