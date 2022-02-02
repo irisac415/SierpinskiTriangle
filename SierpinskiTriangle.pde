@@ -15,10 +15,10 @@ public void sierpinski(int x, int y, int len)
 {
   if(len<50){
     fill(150,150,230);
-    stroke(230,150,240);
+    stroke(150,150,230);
     strokeWeight(1);
     triangle(x,y,x+len/2,y-len/3,x+len,y);
-    stroke(100,100,200);
+    stroke(120,120,210);
     strokeWeight(3);
     noFill();
     triangle(x,y,x+len/2,y-len,x+len,y);
