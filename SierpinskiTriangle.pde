@@ -15,7 +15,7 @@ public void sierpinski(int x, int y, int len)
 {
   if(len<50){
     fill(150,150,230);
-    stroke(150,150,230);
+    stroke(230,150,240);
     strokeWeight(1);
     triangle(x,y,x+len/2,y-len/3,x+len,y);
     stroke(100,100,200);
